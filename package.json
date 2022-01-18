@@ -1,0 +1,10 @@
+{
+  "name": "npm-monorepo",
+  "repository": "ssh://git@github.com/koukikitamura/npm-monorepo.git",
+  "author": "koki kitamura <developer@koukikitamura.jp>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+
+  }
+}
