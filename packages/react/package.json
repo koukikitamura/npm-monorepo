@@ -1,10 +1,14 @@
 {
   "name": "@koukikitamura/npm-monorepo-react",
   "version": "1.0.0",
-  "repository": "ssh://git@github.com/koukikitamura/npm-monorepo.git",
   "author": "koki kitamura <developer@koukikitamura.jp>",
   "license": "MIT",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com/koukikitamura/npm-monorepo.git",
+    "directory": "packages/react"
+  },
   "files": [
     "esm"
   ],
@@ -13,12 +17,12 @@
     "test": "echo Core: Run tests."
   },
   "devDependencies": {
+    "@koukikitamura/npm-monorepo-core": "^1.0.0",
     "@types/react": "^17.0.2",
-    "react": "^17.0.2",
-    "@koukikitamura/npm-monorepo-core": "file:../core"
+    "react": "^17.0.2"
   },
   "peerDependencies": {
-    "react": "^17",
-    "@koukikitamura/npm-monorepo-core": "^1"
+    "@koukikitamura/npm-monorepo-core": "^1",
+    "react": "^17"
   }
 }

@@ -1,10 +1,14 @@
 {
   "name": "@koukikitamura/npm-monorepo-core",
   "version": "1.0.0",
-  "repository": "ssh://git@github.com/koukikitamura/npm-monorepo.git",
   "author": "koki kitamura <developer@koukikitamura.jp>",
   "license": "MIT",
   "main": "esm/index.js",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com/koukikitamura/npm-monorepo.git",
+    "directory": "packages/core"
+  },
   "files": [
     "esm"
   ],
