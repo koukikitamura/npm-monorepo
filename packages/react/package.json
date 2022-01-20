@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "author": "koki kitamura <developer@koukikitamura.jp>",
   "license": "MIT",
-  "main": "index.js",
+  "main": "esm/index.js",
+  "types": "esm/index.d.ts",
   "repository": {
     "type": "git",
     "url": "ssh://git@github.com/koukikitamura/npm-monorepo.git",
@@ -16,13 +17,14 @@
     "build": "tsc",
     "test": "echo Core: Run tests."
   },
+  "dependencies": {
+    "@koukikitamura/npm-monorepo-core": "1.0.0"
+  },
   "devDependencies": {
-    "@koukikitamura/npm-monorepo-core": "^1.0.0",
     "@types/react": "^17.0.2",
     "react": "^17.0.2"
   },
   "peerDependencies": {
-    "@koukikitamura/npm-monorepo-core": "^1",
     "react": "^17"
   }
 }

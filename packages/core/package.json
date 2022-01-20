@@ -4,6 +4,7 @@
   "author": "koki kitamura <developer@koukikitamura.jp>",
   "license": "MIT",
   "main": "esm/index.js",
+  "types": "esm/index.d.ts",
   "repository": {
     "type": "git",
     "url": "ssh://git@github.com/koukikitamura/npm-monorepo.git",
