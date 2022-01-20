@@ -13,7 +13,7 @@
   "scripts": {
     "build": "lerna run build",
     "test": "lerna run test --parallel",
-    "bump": "lerna version",
+    "bump": "lerna version --no-push",
     "release": "lerna publish from-package -y"
   },
   "devDependencies": {

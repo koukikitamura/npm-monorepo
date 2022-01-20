@@ -1,9 +1,8 @@
 name: release
 
 on:
-  push:
-    branches:
-      - release
+  release:
+    types: [created]
 
 jobs:
   publish:
@@ -21,6 +20,8 @@ jobs:
           node-version: ${{ matrix.node-version }}
           registry-url: "https://npm.pkg.github.com"
       - run: yarn
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - run: yarn build
       - run: yarn release
         env:
