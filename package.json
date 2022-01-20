@@ -1,5 +1,6 @@
 {
   "name": "npm-monorepo",
+  "private": true,
   "repository": "ssh://git@github.com/koukikitamura/npm-monorepo.git",
   "author": "koki kitamura <developer@koukikitamura.jp>",
   "license": "MIT",
@@ -7,10 +8,10 @@
     "registry": "https://npm.pkg.github.com"
   },
   "workspaces": [
-    "packages/core"
+    "packages/*"
   ],
   "scripts": {
-    "build": "lerna run build --parallel",
+    "build": "lerna run build",
     "test": "lerna run test --parallel",
     "bump": "lerna version",
     "release": "lerna publish from-package -y"
