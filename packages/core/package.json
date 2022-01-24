@@ -1,6 +1,6 @@
 {
   "name": "@koukikitamura/npm-monorepo-core",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "koki kitamura <developer@koukikitamura.jp>",
   "license": "MIT",
   "main": "esm/index.js",
